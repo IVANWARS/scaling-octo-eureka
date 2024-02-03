@@ -20,16 +20,34 @@
 
 
 
-int n = 10;
-int[] arr = new int[n];
+//int n = 10;
+//int[] array = { 6, 3, 5, 7, 8, 12, 86, 4, 9, 10 };
+//int i = 0;
+
+//while ( i < array.Length )
+
+//{
+//if (array[i] % 2 == 0)
+
+//{
+//  Console.Write($"{array[i] } ");
+// }
+//  i = i + 1;
+//}
+
+
+int n = 5;
+int[] array = { 10, 3, 6, 2, 1 };
 int i = 0;
+int max = array[0];
 
 while (i < n)
 {
-    arr[i] = i + 1;
-    //Console.Write(arr[i]);
-    //Console.Write(' ');
-    Console.Write($"{arr[i]} ");
+    if (array[i] > max)
+    {
+        max = array[i];
+
+    }
     i = i + 1;
-     
 }
+Console.Write(max);
